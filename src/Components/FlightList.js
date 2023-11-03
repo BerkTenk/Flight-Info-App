@@ -6,7 +6,7 @@ function FlightList({ filters }) {
     const [sort, setSort] = useState("");
 
     useEffect(() => {
-        axios("http://localhost:3000/GetFlights")
+        axios("/.netlify/functions/getFlights")
             .then((res) => {
                 let filteredFlights = res.data;
                 if (filters.departureAirport) {
