@@ -1,6 +1,6 @@
 exports.handler = async (event, context) => {
     try {
-      const flightsData = require('./api.json'); // api.json dosyanızın yolunu doğru belirttiğinizden emin olun
+      const flightsData = require('./json-server/api.json'); // api.json dosyanızın yolunu doğru belirttiğinizden emin olun
   
       return {
         statusCode: 200,
