@@ -203,9 +203,7 @@ function FlightList({ filters }) {
                 }
 
                 setFlights(filteredFlights);
-            })
-            
-    , [filters, sort];
+    }, [filters, sort]);
 
 
     const [expandedFlightId, setExpandedFlightId] = useState(null);
