@@ -214,9 +214,7 @@ function FlightList({ filters }) {
         }
     };
 
-    if (loading) {
-        return <p>Loading...</p>
-    }
+   
     if (!flights || flights.length === 0) {
         return <p>Flight not found.</p>
     }
