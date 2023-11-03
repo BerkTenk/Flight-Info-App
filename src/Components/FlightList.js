@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 function FlightList({ filters }) {
     const [flights, setFlights] = useState([]);
-    const [loading, setLoading] = useState(true);
     const [sort, setSort] = useState("");
 
     useEffect(() => {
