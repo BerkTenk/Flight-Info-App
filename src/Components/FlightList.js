@@ -81,7 +81,7 @@ function FlightList({ filters }) {
                 <button className='button-1' onClick={() => setSort("arrTime")}>Sort By Arrival Time</button>
             </div>
             <ul className='list'>
-                {flights.map((flight) => (
+                {filteredFlights.map((flight) => (
                     <li key={flight.id}>
                         Name:{flight.name}  <br />
                         Departure:{flight.departure} <br />
